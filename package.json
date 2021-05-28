@@ -1,0 +1,32 @@
+{
+  "name": "@alchemisten/eslint-config-alchem",
+  "version": "1.0.0",
+  "description": "Code style package for Alchemisten projects",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "prettier.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/alchemisten/internal/packages/eslint-config-alchem.git"
+  },
+  "peerDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "7.18.0",
+    "prettier": "2.3.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "2.3.0"
+  },
+  "author": "Alchemisten AG",
+  "bugs": {
+    "url": "https://gitlab.com/alchemisten/internal/packages/eslint-config-alchem/issues"
+  },
+  "homepage": "https://gitlab.com/alchemisten/internal/packages/eslint-config-alchem#readme"
+}
