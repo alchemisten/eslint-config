@@ -1,5 +1,5 @@
 {
-  "name": "@alchemisten/eslint-config-alchem",
+  "name": "@alchemisten/eslint-config",
   "version": "1.0.0",
   "description": "Code style package for Alchemisten projects",
   "main": "index.js",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/alchemisten/internal/packages/eslint-config-alchem.git"
+    "url": "https://gitlab.com/alchemisten/internal/packages/eslint-config.git"
   },
   "peerDependencies": {
     "babel-eslint": "10.1.0",
@@ -26,7 +26,7 @@
   },
   "author": "Alchemisten AG",
   "bugs": {
-    "url": "https://gitlab.com/alchemisten/internal/packages/eslint-config-alchem/issues"
+    "url": "https://gitlab.com/alchemisten/internal/packages/eslint-config/issues"
   },
-  "homepage": "https://gitlab.com/alchemisten/internal/packages/eslint-config-alchem#readme"
+  "homepage": "https://gitlab.com/alchemisten/internal/packages/eslint-config#readme"
 }
