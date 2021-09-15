@@ -1,9 +1,11 @@
 {
   "name": "@alchemisten/eslint-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Code style package for Alchemisten projects",
   "main": ".eslintrc.js",
-  "files": [".eslintrc.js"],
+  "files": [
+    ".eslintrc.js"
+  ],
   "repository": "git@gitlab.com:alchemisten/internal/packages/eslint-config.git",
   "scripts": {
     "publish:package": "alcm publish",
