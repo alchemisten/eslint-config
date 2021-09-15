@@ -7,8 +7,6 @@ cache:
     - node_modules/
 
 publish:
-  dependencies:
-    - prepare
   stage: deploy
   script:
     - yarn run publish:package
