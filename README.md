@@ -1,7 +1,7 @@
-# ALCHEMISTEN ESLint Config
+# ESLint Config
 Preconfigured ESLint rules and Prettier formatting for plug and play usage in projects. 
 
-##How to use
+## How to use
 * Install @alchemisten/eslint-config with: `yarn add @alchemisten/eslint-config`
 * Install the required peer dependencies if not present: `yarn add eslint prettier eslint-config-airbnb-typescript-prettier -D`
 * Use it within your .eslintrc:

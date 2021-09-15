@@ -1,9 +1,19 @@
-build_and_publish:
-  before_script:
-    - git config --global user.name "${GITLAB_USER_NAME}"
-    - git config --global user.email "${GITLAB_USER_EMAIL}"
+publish:
+  stage: publish
   script:
-    - yarn publish --verbose --non-interactive
+    - yarn run publish:package
+  only:
+    refs:
+      - tags
+    variables:
+      - $CI_COMMIT_TAG =~ /^v\d+.\d+.\d+.*/
+  except:
+    - branches
+
+docs:
+  stage: publish
+  script:
+    - yarn run publish:docs
   only:
     refs:
       - tags
