@@ -1,14 +1,14 @@
 module.exports = {
+    plugins: ["import"],
     extends: "airbnb-typescript-prettier",
     ignorePatterns: ["**/*.d.ts", "**/*.js"],
     rules: {
-        "consistent-return": "off",
         "no-return-await": "off",
         "no-await-in-loop": "off",
         "no-useless-constructor": "off",
-        "explicit-module-boundary-types": "off",
         "no-restricted-syntax": "off",
         "no-cond-assign": "off",
+        "consistent-return": "off",
         "import/prefer-default-export": "off",
         "sort-imports": [
             "warn",
@@ -19,10 +19,11 @@ module.exports = {
             },
         ],
         "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/explicit-member-accessibility": [
             "warn",
             {
-                "accessibility": "explicit",
+                accessibility: "explicit",
             },
         ],
         "prettier/prettier": [
@@ -35,4 +36,11 @@ module.exports = {
             },
         ],
     },
+    settings: {
+        "import/resolver": {
+            typescript: {
+                alwaysTryTypes: true
+            }
+        }
+    }
 };
