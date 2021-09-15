@@ -3,6 +3,7 @@ image: node:15.5.1
 before_script:
   - yarn
 cache:
+  key: $CI_COMMIT_REF_SLUG
   paths:
     - node_modules/
 
