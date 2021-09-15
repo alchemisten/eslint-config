@@ -1,8 +1,5 @@
-stages:
-  - publish
-
 publish:
-  stage: publish
+  stage: deploy
   script:
     - yarn run publish:package
   only:
@@ -14,7 +11,7 @@ publish:
     - branches
 
 docs:
-  stage: publish
+  stage: deploy
   script:
     - yarn run publish:docs
   only:
