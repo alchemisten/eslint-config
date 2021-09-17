@@ -3,6 +3,7 @@ module.exports = {
     extends: "airbnb-typescript-prettier",
     ignorePatterns: ["**/*.d.ts", "**/*.js"],
     rules: {
+        "no-console": "off",
         "no-return-await": "off",
         "no-await-in-loop": "off",
         "no-useless-constructor": "off",
