@@ -1,6 +1,6 @@
 {
   "name": "@alchemisten/eslint-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Code style package for Alchemisten projects",
   "main": ".eslintrc.js",
   "files": [
@@ -16,9 +16,9 @@
     "prettier": ">= 2.3.2 < 3"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.24.2",
     "eslint-config-airbnb-typescript-prettier": ">= 4.2.0 < 5",
-    "eslint-import-resolver-typescript": "^2.5.0"
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.24.2"
   },
   "devDependencies": {
     "@alchemisten/cli": "^0.2.5",
