@@ -22,3 +22,20 @@ export const carl = (c: number): void => {
         foo[key] += `-${stuff}-${c}`;
     });
 };
+
+export interface NamedObject {
+    name: string;
+}
+
+/* This example is deliberately verbose to demonstrate consistent-return.
+ * Remove the return in the last line to see the error.
+ */
+export const findByName = (list: NamedObject[], name: string): NamedObject | undefined => {
+    for (const item of list) {
+        if (item.name === name) {
+            return item;
+        }
+    }
+
+    return undefined;
+};

@@ -9,7 +9,6 @@ module.exports = {
         "no-useless-constructor": "off",
         "no-restricted-syntax": "off",
         "no-cond-assign": "off",
-        "consistent-return": "off",
         "import/prefer-default-export": "off",
         "sort-imports": [
             "warn",
