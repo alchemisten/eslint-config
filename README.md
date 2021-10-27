@@ -11,15 +11,26 @@ Preconfigured ESLint rules and Prettier formatting for plug and play usage in pr
     }
     ```
 
+## New release
+Please note, that any change to the linting rules that produces an error and not just a warning
+needs to be major release, because it will break dependent code.
+
 ## Custom rules
 These are all the rules which differ from the AirBnB config or the default Prettier settings:
 
 ### ES Lint
+* `no-console`: Allowed until we have a logger package
+* `no-return-await`: Debugging is improved with return await at the cost of an extra microtask
+* `no-await-in-loop`: It is more common to have dependent calls in a loop than parallelizable calls
+* `no-restricted-syntax`: `for (of)` considered fast enough for our use cases, beware `for (in)` and check object property yourself
+* `no-useless-constructor`: Empty constructor required by some redux implementations
+* `no-cond-assign`: Turned off to allow assigning in while loops
 * `import/prefer-default-export`: Default imports are not preferred
 * `sort-imports`: Members in a multiple member import declaration should be sorted alphabetically
 
 ### Typescript
 * `@typescript-eslint/no-unused-vars`: Only produce warnings for unused variables
+* `@typescript-eslint/explicit-module-boundary-types`: Not necessary because IntelliSense catches this in a sufficient fashion
 * `@typescript-eslint/explicit-member-accessibility`: Require explicit accessibility declaration of all class members
 
 ### Prettier
