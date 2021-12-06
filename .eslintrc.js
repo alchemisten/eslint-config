@@ -3,13 +3,24 @@ module.exports = {
     extends: "airbnb-typescript-prettier",
     ignorePatterns: ["**/*.d.ts", "**/*.js"],
     rules: {
-        "no-console": "off",
-        "no-return-await": "off",
-        "no-await-in-loop": "off",
-        "no-useless-constructor": "off",
-        "no-restricted-syntax": "off",
-        "no-cond-assign": "off",
         "import/prefer-default-export": "off",
+        "no-await-in-loop": "off",
+        "no-cond-assign": "off",
+        "no-console": "off",
+        "no-restricted-imports": [
+            "error",
+            {
+                "patterns": [
+                    "@material-ui/core/*/*",
+                    "!@material-ui/core/styles",
+                    "@mui/core/*/*",
+                    "!@mui/core/styles"
+                ]
+            }
+        ],
+        "no-restricted-syntax": "off",
+        "no-return-await": "off",
+        "no-useless-constructor": "off",
         "sort-imports": [
             "warn",
             {
