@@ -19,13 +19,14 @@ needs to be major release, because it will break dependent code.
 These are all the rules which differ from the AirBnB config or the default Prettier settings:
 
 ### ES Lint
-* `no-console`: Allowed until we have a logger package
-* `no-return-await`: Debugging is improved with return await at the cost of an extra microtask
-* `no-await-in-loop`: It is more common to have dependent calls in a loop than parallelizable calls
-* `no-restricted-syntax`: `for (of)` considered fast enough for our use cases, beware `for (in)` and check object property yourself
-* `no-useless-constructor`: Empty constructor required by some redux implementations
-* `no-cond-assign`: Turned off to allow assigning in while loops
 * `import/prefer-default-export`: Default imports are not preferred
+* `no-await-in-loop`: It is more common to have dependent calls in a loop than parallelizable calls
+* `no-cond-assign`: Turned off to allow assigning in while loops
+* `no-console`: Allowed until we have a logger package
+* `no-restricted-imports`: Make sure all Material UI components are imported directly from core
+* `no-restricted-syntax`: `for (of)` considered fast enough for our use cases, beware `for (in)` and check object property yourself
+* `no-return-await`: Debugging is improved with return await at the cost of an extra microtask
+* `no-useless-constructor`: Empty constructor required by some redux implementations
 * `sort-imports`: Members in a multiple member import declaration should be sorted alphabetically
 
 ### Typescript
