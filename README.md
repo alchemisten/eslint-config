@@ -28,6 +28,10 @@ These are all the rules which differ from the AirBnB config or the default Prett
 * `no-useless-constructor`: Empty constructor required by some redux implementations
 * `sort-imports`: Members in a multiple member import declaration should be sorted alphabetically
 
+### React
+* `react/require-default-props`: Turned off, because it will be deprecated in upcoming React versions anyway (use default parameters instead)
+
+
 ### Typescript
 * `@typescript-eslint/no-unused-vars`: Only produce warnings for unused variables
 * `@typescript-eslint/explicit-module-boundary-types`: Not necessary because IntelliSense catches this in a sufficient fashion

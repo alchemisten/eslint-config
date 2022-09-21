@@ -20,6 +20,7 @@ module.exports = {
         "no-restricted-syntax": "off",
         "no-return-await": "off",
         "no-useless-constructor": "off",
+        "react/require-default-props": "off",
         "sort-imports": [
             "warn",
             {
