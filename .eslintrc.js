@@ -6,7 +6,6 @@ module.exports = {
         "import/prefer-default-export": "off",
         "no-await-in-loop": "off",
         "no-cond-assign": "off",
-        "no-console": "off",
         "no-restricted-imports": [
             "error",
             {
