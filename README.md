@@ -29,6 +29,7 @@ These are all the rules which differ from the AirBnB config or the default Prett
 * `sort-imports`: Members in a multiple member import declaration should be sorted alphabetically
 
 ### React
+* `react/function-component-definition`: Set to warn if not an arrow-function
 * `react/require-default-props`: Turned off, because it will be deprecated in upcoming React versions anyway (use default parameters instead)
 
 

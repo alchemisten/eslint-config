@@ -20,7 +20,6 @@ module.exports = {
         "no-restricted-syntax": "off",
         "no-return-await": "off",
         "no-useless-constructor": "off",
-        "react/require-default-props": "off",
         "sort-imports": [
             "warn",
             {
@@ -29,6 +28,14 @@ module.exports = {
                 ignoreMemberSort: false,
             },
         ],
+        "react/function-component-definition": [
+            "warn",
+            {
+                namedComponents: "arrow-function",
+                unnamedComponents: "arrow-function",
+            },
+        ],
+        "react/require-default-props": "off",
         "@typescript-eslint/no-unused-vars": "warn",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/explicit-member-accessibility": [
