@@ -6,11 +6,7 @@
   "files": [
     ".eslintrc.js"
   ],
-  "repository": "git@gitlab.com:alchemisten/internal/packages/eslint-config.git",
-  "scripts": {
-    "publish:package": "alcm publish",
-    "publish:docs": "alcm docs collect && alcm docs publish"
-  },
+  "repository": "https://github.com/alchemisten/eslint-config.git",
   "peerDependencies": {
     "eslint": ">= 8.23.1 < 9",
     "prettier": ">= 2.7.1 < 3"
@@ -21,7 +17,6 @@
     "eslint-plugin-import": "^2.26.0"
   },
   "devDependencies": {
-    "@alchemisten/cli": "^0.2.5",
     "@material-ui/core": "^4.12.3",
     "@types/react": "^17.0.20",
     "eslint": "^8.23.1",
@@ -30,8 +25,9 @@
     "typescript": "^4.8.3"
   },
   "author": "Alchemisten AG",
+  "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/alchemisten/internal/packages/eslint-config/issues"
+    "url": "https://github.com/alchemisten/eslint-config/issues"
   },
-  "homepage": "https://gitlab.com/alchemisten/internal/packages/eslint-config#readme"
+  "homepage": "https://github.com/alchemisten/eslint-config"
 }
