@@ -1,5 +1,7 @@
 # ESLint Config
-Preconfigured ESLint rules and Prettier formatting for plug and play usage in projects. 
+Preconfigured ESLint rules and Prettier formatting for plug and play usage in projects.
+
+For NX projects simply copy over the rules for now.
 
 ## How to use
 * Install @alchemisten/eslint-config with: `yarn add @alchemisten/eslint-config`
