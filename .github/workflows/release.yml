@@ -16,7 +16,6 @@ jobs:
           always-auth: true
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - run: yarn install --frozen-lockfile
-      - run: yarn run test
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
