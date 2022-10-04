@@ -1,5 +1,7 @@
 # ESLint Config
-Preconfigured ESLint rules and Prettier formatting for plug and play usage in projects. 
+Preconfigured ESLint rules and Prettier formatting for plug and play usage in projects.
+
+For NX projects simply copy over the rules for now.
 
 ## How to use
 * Install @alchemisten/eslint-config with: `yarn add @alchemisten/eslint-config`
@@ -22,12 +24,16 @@ These are all the rules which differ from the AirBnB config or the default Prett
 * `import/prefer-default-export`: Default imports are not preferred
 * `no-await-in-loop`: It is more common to have dependent calls in a loop than parallelizable calls
 * `no-cond-assign`: Turned off to allow assigning in while loops
-* `no-console`: Allowed until we have a logger package
 * `no-restricted-imports`: Make sure all Material UI components are imported directly from core
 * `no-restricted-syntax`: `for (of)` considered fast enough for our use cases, beware `for (in)` and check object property yourself
 * `no-return-await`: Debugging is improved with return await at the cost of an extra microtask
 * `no-useless-constructor`: Empty constructor required by some redux implementations
 * `sort-imports`: Members in a multiple member import declaration should be sorted alphabetically
+
+### React
+* `react/function-component-definition`: Set to warn if not an arrow-function
+* `react/require-default-props`: Turned off, because it will be deprecated in upcoming React versions anyway (use default parameters instead)
+
 
 ### Typescript
 * `@typescript-eslint/no-unused-vars`: Only produce warnings for unused variables
