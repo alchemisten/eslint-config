@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/alchemisten/eslint-config/issues"
   },
-  "homepage": "https://github.com/alchemisten/eslint-config"
+  "homepage": "https://github.com/alchemisten/eslint-config",
+  "publishConfig": {
+    "access": "public"
+  }
 }
