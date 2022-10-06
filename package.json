@@ -37,5 +37,6 @@
   "homepage": "https://github.com/alchemisten/eslint-config",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "keywords": ["eslint", "javascript", "typescript", "airbnb", "prettier"]
 }
