@@ -1,6 +1,6 @@
 {
   "name": "@schablone/eslint-config",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Code style package for Alchemisten projects",
   "main": ".eslintrc.js",
   "files": [
