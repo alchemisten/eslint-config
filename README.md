@@ -44,7 +44,6 @@ These are all the rules which differ from the AirBnB config or the default Prett
 * `printWidth`: Print width is set to 120, instead of 80 for better readability
 * `semi`: Semicolons are required
 * `singleQuote`: Single quotes are used instead of double quotes in normal code
-* `tabWidth`: Tab width is set to 4 spaces instead of 2
 
 ## Further reading
 * List of all [ESLint rules](https://eslint.org/docs/rules/)
