@@ -21,7 +21,9 @@ needs to be major release, because it will break dependent code.
 These are all the rules which differ from the AirBnB config or the default Prettier settings:
 
 ### ES Lint
+* `arrow-body-style`: Turned off, because we want to keep the option to be explicit
 * `import/prefer-default-export`: Default imports are not preferred
+* `import/extensions`: Turned off, because it is not necessary with Typescript
 * `no-await-in-loop`: It is more common to have dependent calls in a loop than parallelizable calls
 * `no-cond-assign`: Turned off to allow assigning in while loops
 * `no-restricted-imports`: Make sure all Material UI components are imported directly from core
