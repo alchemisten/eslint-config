@@ -17,7 +17,7 @@ interface SampleComponentProps {
 export const SampleComponent: FC<SampleComponentProps> = ({ one, two = '' }) => {
   const [state, setState] = useState(false);
   const text =
-    'I am a long text, tha goes well beyond the normal 80 characters allowed in prettier and also way over the new 120 and then some';
+    'I am a long text, that goes well beyond the normal 80 characters allowed in prettier and also way over the new 120 and then some';
   const { spacing } = useTheme();
   const style = {
     button: {
