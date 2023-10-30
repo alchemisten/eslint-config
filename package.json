@@ -53,8 +53,5 @@
     "typescript",
     "airbnb",
     "prettier"
-  ],
-  "engines": {
-    "node": ">= 18"
-  }
+  ]
 }
