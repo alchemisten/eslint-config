@@ -4,8 +4,8 @@ Preconfigured ESLint rules and Prettier formatting for plug and play usage in pr
 For NX projects simply copy over the rules for now.
 
 ## How to use
-* Install @schablone/eslint-config with: `yarn add @schablone/eslint-config`
-* Install the required peer dependencies if not present: `yarn add eslint prettier -D`
+* Install @schablone/eslint-config with: `yarn add @schablone/eslint-config -D` or `npm install @schablone/eslint-config --save-dev`
+* Install the required peer dependencies if not present: `yarn add eslint prettier -D` or `npm install eslint prettier --save-dev`
 * Use it within your .eslintrc:
     ```json
     {
