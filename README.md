@@ -4,8 +4,8 @@ Preconfigured ESLint rules and Prettier formatting for plug and play usage in pr
 For NX projects simply copy over the rules for now.
 
 ## How to use
-* Install @schablone/eslint-config with: `yarn add @schablone/eslint-config`
-* Install the required peer dependencies if not present: `yarn add eslint prettier -D`
+* Install @schablone/eslint-config with: `yarn add @schablone/eslint-config -D` or `npm install @schablone/eslint-config --save-dev`
+* Install the required peer dependencies if not present: `yarn add eslint prettier -D` or `npm install eslint prettier --save-dev`
 * Use it within your .eslintrc:
     ```json
     {
@@ -21,7 +21,9 @@ needs to be major release, because it will break dependent code.
 These are all the rules which differ from the AirBnB config or the default Prettier settings:
 
 ### ES Lint
+* `arrow-body-style`: Turned off, because we want to keep the option to be explicit
 * `import/prefer-default-export`: Default imports are not preferred
+* `import/extensions`: Turned off, because it is not necessary with Typescript
 * `no-await-in-loop`: It is more common to have dependent calls in a loop than parallelizable calls
 * `no-cond-assign`: Turned off to allow assigning in while loops
 * `no-restricted-imports`: Make sure all Material UI components are imported directly from core
