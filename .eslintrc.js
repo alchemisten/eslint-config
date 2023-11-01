@@ -1,8 +1,32 @@
 module.exports = {
-    plugins: ["import"],
-    extends: "airbnb-typescript-prettier",
+    plugins: [
+        "react",
+        "jsx-a11y",
+        "import",
+        "prettier",
+        "@typescript-eslint"
+    ],
+    extends: [
+        "airbnb",
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
     ignorePatterns: ["**/*.d.ts", "**/*.js"],
     rules: {
+        "arrow-body-style": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                js: "never",
+                mjs: "never",
+                jsx: "never",
+                ts: "never",
+                tsx: "never",
+            },
+        ],
         "import/prefer-default-export": "off",
         "no-await-in-loop": "off",
         "no-cond-assign": "off",
@@ -55,9 +79,15 @@ module.exports = {
     },
     settings: {
         "import/resolver": {
+            node: {
+                extensions: [".js", ".ts", ".jsx", ".tsx", ".json"],
+            },
             typescript: {
                 alwaysTryTypes: true
             }
         }
+    },
+    parserOptions: {
+        project: "./tsconfig.json",
     }
 };
