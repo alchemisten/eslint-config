@@ -12,6 +12,7 @@ For NX projects simply copy over the rules for now.
         "extends": "@schablone/eslint-config"
     }
     ```
+* Be aware, that this config is meant to be used with React versions 17 and above, because it turns off the `react/react-in-jsx-scope` rule
 
 ## New release
 Please note, that any change to the linting rules that produces an error and not just a warning
@@ -34,6 +35,7 @@ These are all the rules which differ from the AirBnB config or the default Prett
 
 ### React
 * `react/function-component-definition`: Set to warn if not an arrow-function
+* `react/react-in-jsx-scope`: Turned off, because it is not necessary anymore since React 17
 * `react/require-default-props`: Turned off, because it will be deprecated in upcoming React versions anyway (use default parameters instead)
 
 

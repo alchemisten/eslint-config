@@ -59,6 +59,7 @@ module.exports = {
                 unnamedComponents: "arrow-function",
             },
         ],
+        "react/react-in-jsx-scope": "off",
         "react/require-default-props": "off",
         "@typescript-eslint/consistent-type-imports": "warn",
         "@typescript-eslint/no-unused-vars": "warn",

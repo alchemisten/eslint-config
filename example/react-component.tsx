@@ -5,7 +5,7 @@
  */
 /* eslint-disable import/no-extraneous-dependencies */
 import type { FC } from 'react';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import { bob } from './typescript';
