@@ -4,7 +4,8 @@
     for this example code.
  */
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { FC, useEffect, useState } from 'react';
+import type { FC } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import { bob } from './typescript';

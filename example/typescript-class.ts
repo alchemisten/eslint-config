@@ -1,5 +1,10 @@
+import type { NamedObject } from './typescript';
+import { findByName } from './typescript';
+
 export class TheClass {
   private sum: number;
+
+  private things: NamedObject[] = [];
 
   public constructor() {
     this.doSomething();
@@ -14,5 +19,9 @@ export class TheClass {
     for (let i = 0; i < 100; i += 1) {
       this.sum += i;
     }
+  }
+
+  private findByName(searchedName: string): NamedObject {
+    return findByName(this.things, searchedName);
   }
 }

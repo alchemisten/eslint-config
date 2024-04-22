@@ -38,6 +38,7 @@ These are all the rules which differ from the AirBnB config or the default Prett
 
 
 ### Typescript
+* `@typescript-eslint/consistent-type-imports`: Produce a warning if the type imports are not marked as such 
 * `@typescript-eslint/no-unused-vars`: Only produce warnings for unused variables
 * `@typescript-eslint/explicit-module-boundary-types`: Not necessary because IntelliSense catches this in a sufficient fashion
 * `@typescript-eslint/explicit-member-accessibility`: Require explicit accessibility declaration of all class members
