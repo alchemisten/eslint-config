@@ -59,15 +59,17 @@ module.exports = {
                 unnamedComponents: "arrow-function",
             },
         ],
+        "react/react-in-jsx-scope": "off",
         "react/require-default-props": "off",
-        "@typescript-eslint/no-unused-vars": "warn",
-        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/consistent-type-imports": "warn",
         "@typescript-eslint/explicit-member-accessibility": [
             "warn",
             {
                 accessibility: "explicit",
             },
         ],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
         "prettier/prettier": [
             "warn",
             {
